@@ -9,7 +9,9 @@
         <link href="bootstrapvalidator-0.5.3/dist/css/bootstrapValidator.min.css" rel="stylesheet">
     </head>
     <body>
-        <?php include("./header.html")?>
+        <?php 
+            include("./header.html")
+        ?>
         <div class="container">
 
             <form class="well form-horizontal" action="ContactSendMail.php" method="post" id="contact_form">
