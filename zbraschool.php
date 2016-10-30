@@ -95,66 +95,68 @@
 
 
         <!-- Success message -->
-        <div class="alert alert-success" role="alert" id="success_message">
-            Merci de vous être inscrit(e) ! <i class="glyphicon glyphicon-thumbs-up"></i> Je vous recontacterai dans le plus bref delais.
+        <div class="container">
+            <div class="alert alert-success" role="alert" id="success_message">
+                Merci de t'être inscrit(e) ! <i class="glyphicon glyphicon-thumbs-up"></i> Je te recontacterai dans le plus brefs delais.
+            </div>
+
+           <div class="table-responsive">
+                <table class="table table-bordered calendar">
+                <thead class="head-calendar">
+                    <tr>
+                        <th align="center">Lundi</th>
+                        <th align="center">Mardi</th>
+                        <th align="center">Mercredi</th>
+                        <th align="center">Jeudi</th>
+                        <th align="center">Vendredi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php include 'connexion.php'; 
+                try{
+                     $sql = "SELECT * FROM creneau";
+
+                     // on envoie la requête
+                     $res = $mysqli->query($sql);
+                     $lstCreneau = array();
+                     while ($data = mysqli_fetch_array($res)) {
+                         $lstCreneau[] = $data;
+                    }
+                    //print_r($lstCreneau);
+
+                    include 'functions.php';
+                    for ($ii = 0;$ii<=9; $ii++) {
+                        $lundi= $ii;
+                        $mardi= $ii+10;
+                        $mercredi=$ii+20;
+                        $jeudi=$ii+30;
+                        $vendredi=$ii+40;
+                        echo "<tr>"; 
+                            echo creneauToHTML($lstCreneau[$lundi]['statut'],$lstCreneau[$lundi]['lib_creneau'],$lstCreneau[$lundi]['code_jour'],$lstCreneau[$lundi]['code_creneau']);
+                            echo creneauToHTML($lstCreneau[$mardi]['statut'],$lstCreneau[$mardi]['lib_creneau'],$lstCreneau[$mardi]['code_jour'],$lstCreneau[$mardi]['code_creneau']);
+                            echo creneauToHTML($lstCreneau[$mercredi]['statut'],$lstCreneau[$mercredi]['lib_creneau'],$lstCreneau[$mercredi]['code_jour'],$lstCreneau[$mercredi]['code_creneau']);
+                            echo creneauToHTML($lstCreneau[$jeudi]['statut'],$lstCreneau[$jeudi]['lib_creneau'],$lstCreneau[$jeudi]['code_jour'],$lstCreneau[$jeudi]['code_creneau']);
+                            echo creneauToHTML($lstCreneau[$vendredi]['statut'],$lstCreneau[$vendredi]['lib_creneau'],$lstCreneau[$vendredi]['code_jour'],$lstCreneau[$vendredi]['code_creneau']);
+                        echo "</tr>";
+                    }
+                }
+                catch(Exception $e){
+                     echo "Erreur :". $e;
+                }
+               ?>
+                    </tbody>
+                </table>
+                <table class="table table-bordered calendar">
+                  <tbody>
+                    <tr>
+                      <td class="availableLib" style="width: 33%; text-align: center;">Disponible</td>
+                      <td class="booked" style="width: 33%; text-align: center;">Reservé</td>
+                      <td class="unavailable" style="width: 33%; text-align: center;">Indisponible</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div> <!-- Div Table responsive-->
         </div>
-
-       <div class="table-responsive">
-            <table class="table table-bordered calendar">
-            <thead class="head-calendar">
-                <tr>
-                    <th align="center">Lundi</th>
-                    <th align="center">Mardi</th>
-                    <th align="center">Mercredi</th>
-                    <th align="center">Jeudi</th>
-                    <th align="center">Vendredi</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php include 'connexion.php'; 
-            try{
-                 $sql = "SELECT * FROM creneau";
-
-                 // on envoie la requête
-                 $res = $mysqli->query($sql);
-                 $lstCreneau = array();
-                 while ($data = mysqli_fetch_array($res)) {
-                     $lstCreneau[] = $data;
-                }
-                //print_r($lstCreneau);
-
-                include 'functions.php';
-                for ($ii = 0;$ii<=9; $ii++) {
-                    $lundi= $ii;
-                    $mardi= $ii+10;
-                    $mercredi=$ii+20;
-                    $jeudi=$ii+30;
-                    $vendredi=$ii+40;
-                    echo "<tr>"; 
-                        echo creneauToHTML($lstCreneau[$lundi]['statut'],$lstCreneau[$lundi]['lib_creneau'],$lstCreneau[$lundi]['code_jour'],$lstCreneau[$lundi]['code_creneau']);
-                        echo creneauToHTML($lstCreneau[$mardi]['statut'],$lstCreneau[$mardi]['lib_creneau'],$lstCreneau[$mardi]['code_jour'],$lstCreneau[$mardi]['code_creneau']);
-                        echo creneauToHTML($lstCreneau[$mercredi]['statut'],$lstCreneau[$mercredi]['lib_creneau'],$lstCreneau[$mercredi]['code_jour'],$lstCreneau[$mercredi]['code_creneau']);
-                        echo creneauToHTML($lstCreneau[$jeudi]['statut'],$lstCreneau[$jeudi]['lib_creneau'],$lstCreneau[$jeudi]['code_jour'],$lstCreneau[$jeudi]['code_creneau']);
-                        echo creneauToHTML($lstCreneau[$vendredi]['statut'],$lstCreneau[$vendredi]['lib_creneau'],$lstCreneau[$vendredi]['code_jour'],$lstCreneau[$vendredi]['code_creneau']);
-                    echo "</tr>";
-                }
-            }
-            catch(Exception $e){
-                 echo "Erreur :". $e;
-            }
-           ?>
-                </tbody>
-            </table>
-            <table class="table table-bordered calendar">
-              <tbody>
-                <tr>
-                  <td class="availableLib" style="width: 33%; text-align: center;">Disponible</td>
-                  <td class="booked" style="width: 33%; text-align: center;">Reservé</td>
-                  <td class="unavailable" style="width: 33%; text-align: center;">Indisponible</td>
-                </tr>
-              </tbody>
-            </table>
-        </div> <!-- Div Table responsive-->
         
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -246,9 +248,9 @@
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
                                             <select class="form-control" name="lieu">
                                                 <option value="">Sélectionner un lieu</option>
-                                                <option value="CZ">Chez le Coach</option>
-                                                <option value="Eleve">Chez moi</option>
-                                                <option value="Skype">Via Skype</option>
+                                                <option value="Chez Coach Zbra">Chez le Coach</option>
+                                                <option value="Chez moi">Chez moi</option>
+                                                <option value="Via Skype">Via Skype</option>
                                             </select>
                                         </div>
                                     </div>
@@ -269,7 +271,7 @@
                                 <div class="form-group">
                                     <div class="col-lg-5 col-lg-offset-3">
                                         <button type="submit" class="btn btn-primary">Valider</button>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                                        <button type="button" class="btn btn-default" id="btannuler" data-dismiss="modal">Annuler</button>
                                     </div>
                                 </div>
                             </form>
@@ -337,7 +339,7 @@ $(document).ready(function() {
                   stringLength: {
                         min: 5,
                         max: 5,
-                        message:'Veuillez saisir un code postal de 5 caractères'
+                        message:'Veuillez saisir un code postal composé de 5 chiffres'
                     },
                     notEmpty: {
                         message: 'Veuillez renseigner un code postal'
@@ -393,7 +395,7 @@ $(document).ready(function() {
     .on('success.form.bv', function(e) {
         $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
         $('#firstInscrpiton').data('bootstrapValidator').resetForm();
-
+        
         // Prevent form submission
         e.preventDefault();
 
@@ -407,6 +409,7 @@ $(document).ready(function() {
         $.post($form.attr('action'), $form.serialize(), function(result) {
             console.log(result);
         }, 'json');
+        $('#btannuler').click();
     });
 });
 </script>

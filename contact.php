@@ -25,18 +25,6 @@
                     <div class="alert alert-success" role="alert" id="success_message">
                         Merci de m'avoir contacter ! <i class="glyphicon glyphicon-thumbs-up"></i> Je vous recontacterai dans le plus bref delais.
                     </div>
-                    
-                    <!-- Text input-->
-
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Prénom* :</label>  
-                        <div class="col-lg-4 inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input  name="first_name" placeholder="Prénom" class="form-control"  type="text">
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Text input-->
 
@@ -46,6 +34,18 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <input name="last_name" placeholder="Nom" class="form-control"  type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Prénom* :</label>  
+                        <div class="col-lg-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input  name="first_name" placeholder="Prénom" class="form-control"  type="text">
                             </div>
                         </div>
                     </div>

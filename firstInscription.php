@@ -1,13 +1,6 @@
 <?php
 
 
-
-/*$email = "zz@zz.zz";
-$lieu = "Chez CZ";
-$frmname = "regularInscription";*/
-
-
-
 $to = "coachzbraguitar@gmail.com";
 $email = $_POST['email'];
 $lieu = $_POST['lieu'];
@@ -21,10 +14,10 @@ $tel = $_POST['tel'];
 $comment = $_POST['comment'];
 $prospect = 1;
 
+/*
+    $to = "coachzbraguitar@gmail.com";
 
-
-
-    /*$email = "coachzbra@yopmail.com";
+    $email = "coachzbra@yopmail.com";
     $nom = "a";
     $prenom = "a";
     $adresse = "a";
@@ -33,8 +26,8 @@ $prospect = 1;
     $tel = "a";
     $lieu = "a";
     $comment =  "a";
-    $prospect = 0;*/
-
+    $prospect = 0;
+*/
 
 $sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,now()) ON DUPLICATE KEY UPDATE email ='$email';";
 
@@ -54,13 +47,32 @@ $message_html = "<p> Nom: " . $nom . "</p>"
         . "<p> Lieu: " . $lieu . "</p>"
         .  "<p> Message: </p><p>" . $comment . "</p>";
 
+
 //=====Création du message.
-$message = '
+$message_CZ = '
      <html>
       <head>
-       <title>Calendrier des anniversaires pour Août</title>
+        <title>Inscription au cours du Coach Zbra</title>
       </head>
       <body>
+      <h1>Inscription nouvel éleve Zbra ! </h1>
+      '. $message_html.
+      '</body>
+     </html>
+     ';
+
+/*Message de confirmation eleves*/
+$subject_eleve = "[CZ] Récapitulatif inscription";
+
+$message_eleve = '
+     <html>
+      <head>
+        <title>Inscription au cours du Coach Zbra</title>
+      </head>
+      <body>
+      <h1>Merci pour ton inscription ! Je reveiens vers toi dans les plus brefs délais.</h1>
+      </br>
+      <h4>Récapitulatif des informations envoyées au Coach:</h4>
       '. $message_html.
       '</body>
      </html>
@@ -71,11 +83,19 @@ $message = '
      $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
      // En-têtes additionnels
-     $headers .= 'To: <' . $to. "> \r\n";
-     $header = "From: [CZ CONTACT FORM]";
- 
+     $headers_CZ .= $headers .'To: Eleve <' . $email. '> \r\n';
+     $headers_CZ .= 'From:' . $prenom . ' ' . $nom .' <'.$email.'>'.'\n'; // Expediteur
+     $headers_CZ .= 'Delivered-to: '.$to."\n"; // Destinataire
+     
+     // En-têtes additionnels
+     $headers_eleve .= $headers .'To: Coach Zbra <' . $to. '> \r\n';
+     $headers_eleve .= 'From: Coach Zbra <'.$to.'>'.'\n'; // Expediteur
+     $headers_eleve .= 'Delivered-to: '.$email."\n"; // Destinataire
+
+     // En-têtes additionnels
+    // $headers_CZ = $headers . 'To: <' . $to. "> \r\n";
+     //$headers_eleve = $headers . 'To: <' . $email. "> \r\n";
          
-$retour = mail ($to,$subject,$message,$headers);
-echo $retour;        
-
-
+$retour = mail($to,$subject,$message_CZ,$headers_CZ);
+$retour = mail($email,$subject_eleve,$message_eleve,$headers_eleve);
+//  echo $retour;

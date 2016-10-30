@@ -2,26 +2,40 @@
 //mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] );
 
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
+$prenom = $_POST['first_name'];
+$nom = $_POST['last_name'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
+$tel = $_POST['phone'];
+if(!isset($tel)){
+  $tel = "0102030405";
+}
 $comment =   $_POST['comment'];
 $typeOfperson =   $_POST['typeOfperson'];
-      
+$adresse =" ";
+$cp  = " ";
+$ville = " ";
+$lieu= $_POST['typeOfperson'];
+$prospect = 0;
 /*$first_name ="";
 $last_name ="";
  $email   = "" ;   
  $phone   = "";   
-$comment = "";*/
+$comment = "";
+$typeOfperson = "";*/
+
+$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,now()) ON DUPLICATE KEY UPDATE email ='$email';";
+
+include 'connexion.php';
+$result = $mysqli->query($sql);
+
 
 $to = "coachzbraguitar@gmail.com";
-$subject = "[CZ Contact] " . $first_name . " " . $last_name ;
+$subject = "[CZ Contact] " . $prenom . " " . $nom ;
 $message_html = ""
-        . "<p> Nom: " . $first_name . "</p>" 
-        ."<p> Prenom: " . $last_name . "</p>"
+        . "<p> Nom: " . $prenom . "</p>" 
+        ."<p> Prenom: " . $nom . "</p>"
         . "<p> Mail: " . $email . "</p>" 
-        . "<p> Tel.: " . $phone . "</p>"
+        . "<p> Tel.: " . $tel . "</p>"
         . "<p> Type de personne: " . $typeOfperson . "</p>"
         .  "<p> Message: </p><p>" . $comment . "</p>"
         . "";
@@ -32,25 +46,47 @@ $message_html = ""
 $message = '
      <html>
       <head>
-       <title>Calendrier des anniversaires pour Août</title>
+       <title>Prise de contact avec le Coach Zbra</title>
       </head>
       <body>
+      <h1>Prise de contact</h1>
       '. $message_html.
       '</body>
      </html>
      ';
 
+$message_eleve = '
+     <html>
+      <head>
+        <title>Prise de contact avec le Coach Zbra</title>
+      </head>
+      <body>
+      <h1>Merci pour ta prise de contact ! Je reveiens vers toi dans les plus brefs délais.</h1>
+      </br>
+      <h4>Récapitulatif des informations envoyées au Coach:</h4>
+      '. $message_html.
+      '</body>
+     </html>
+     ';
+$subject_eleve = "[CZ] Contact Coach Zbra";
+
      // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
      $headers  = 'MIME-Version: 1.0' . "\r\n";
      $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-
+     
+          // En-têtes additionnels
+     $headers_CZ .= $headers .'To: Eleve <' . $email. '> \r\n';
+     $headers_CZ .= 'From:' . $prenom . ' ' . $nom .' <'.$email.'>'.'\n'; // Expediteur
+     $headers_CZ .= 'Delivered-to: '.$to."\n"; // Destinataire
+     
      // En-têtes additionnels
-     $headers .= 'To: <' . $to. "> \r\n";
-     $header = "From: [CZ CONTACT FORM]".$passage_ligne;
+     $headers_eleve .= $headers .'To: Coach Zbra <' . $to. '> \r\n';
+     $headers_eleve .= 'From: Coach Zbra <'.$to.'>'.'\n'; // Expediteur
+     $headers_eleve .= 'Delivered-to: '.$email."\n"; // Destinataire
  
          
-$retour = mail ($to,$subject,$message,$headers);
-echo $retour;
+$retour = mail ($to,$subject,$message,$headers_CZ);
+$retour = mail ($email,$subject_eleve,$message_eleve,$headers_eleve);
         
         
         
