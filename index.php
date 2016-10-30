@@ -9,6 +9,7 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
+        <?php include_once("analyticstracking.php") ?>
         <?php include 'header.html'; ?>	
 
 

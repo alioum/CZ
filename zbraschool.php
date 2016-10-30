@@ -4,10 +4,13 @@
     <meta content="" name="description">
     <meta content="Coach Zbra" name="author">
     <?php include './head.html'; ?>
+    <script type="text/javascript" src="bootstrapvalidator-0.5.3/dist/js/bootstrapValidator.min.js"></script>
+    <link href="bootstrapvalidator-0.5.3/dist/css/bootstrapValidator.min.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
     <body>
+        <?php include_once("analyticstracking.php") ?>
         <?php include 'header.html';?>	
         <div class="container">
             <img src="images/Gibsn-Guitar-HD-Wallpapers.jpg" style="width: 100%;"/>
@@ -89,6 +92,12 @@
               </div>
 
               <hr class="featurette-divider">-->
+
+
+        <!-- Success message -->
+        <div class="alert alert-success" role="alert" id="success_message">
+            Merci de vous être inscrit(e) ! <i class="glyphicon glyphicon-thumbs-up"></i> Je vous recontacterai dans le plus bref delais.
+        </div>
 
        <div class="table-responsive">
             <table class="table table-bordered calendar">
@@ -313,6 +322,14 @@ $(document).ready(function() {
             },
             cp: {
                 validators: {
+                  integer: {
+                        message: 'Format de CP incorrecte'
+                  },
+                  stringLength: {
+                        min: 5,
+                        max: 5,
+                        message:'Veuillez saisir un code postal de 5 caractères'
+                    },
                     notEmpty: {
                         message: 'Veuillez renseigner un code postal'
                     }
@@ -365,8 +382,8 @@ $(document).ready(function() {
         }
     })
     .on('success.form.bv', function(e) {
-        $('#success_message_first').slideDown({ opacity: "show" }, "slow"); // Do something ...
-        $('#contact_form').data('bootstrapValidator').resetForm();
+        $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
+        $('#firstInscrpiton').data('bootstrapValidator').resetForm();
 
         // Prevent form submission
         e.preventDefault();

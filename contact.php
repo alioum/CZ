@@ -175,14 +175,14 @@
             },
             comment: {
                 validators: {
-                      stringLength: {
-                        min: 5,
-                        max: 500,
-                        message:'Veuillez saisir un message compris entre 5 et 500 caractères'
-                    },
-                    notEmpty: {
-                        message: 'Veuillez saisir un message'
-                    }
+                        stringLength: {
+                            min: 5,
+                            max: 500,
+                            message:'Veuillez saisir un message compris entre 5 et 500 caractères'
+                        },
+                        notEmpty: {
+                            message: 'Veuillez saisir un message'
+                        }
                     }
                 }
             }
