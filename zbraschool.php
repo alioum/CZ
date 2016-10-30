@@ -145,6 +145,15 @@
            ?>
                 </tbody>
             </table>
+            <table class="table table-bordered calendar">
+              <tbody>
+                <tr>
+                  <td class="availableLib" style="width: 33%; text-align: center;">Disponible</td>
+                  <td class="booked" style="width: 33%; text-align: center;">Reservé</td>
+                  <td class="unavailable" style="width: 33%; text-align: center;">Indisponible</td>
+                </tr>
+              </tbody>
+            </table>
         </div> <!-- Div Table responsive-->
         
         <!-- Modal -->

@@ -240,6 +240,10 @@ th{
 .available{
     background-color: #5cb85c /*#83bc4a*/;
 }
+.availableLib{
+    background-color: #5cb85c /*#83bc4a*/;
+    color: #F8F8FF;
+}
 .booked{
     background-color: #fab10a;
 }
