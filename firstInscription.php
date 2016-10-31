@@ -1,6 +1,6 @@
 <?php
 
-
+/*
 $to = "coachzbraguitar@gmail.com";
 $email = $_POST['email'];
 $lieu = $_POST['lieu'];
@@ -13,8 +13,9 @@ $ville = $_POST['ville'];
 $tel = $_POST['tel'];
 $comment = $_POST['comment'];
 $prospect = 1;
+$qui = "";
 
-/*
+*/
     $to = "coachzbraguitar@gmail.com";
 
     $email = "coachzbra@yopmail.com";
@@ -27,12 +28,13 @@ $prospect = 1;
     $lieu = "a";
     $comment =  "a";
     $prospect = 0;
-*/
+    $qui = "Eleve";
 
-$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,now()) ON DUPLICATE KEY UPDATE email ='$email';";
 
+$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,'$qui',now()) ON DUPLICATE KEY UPDATE email ='$email';";
 include 'connexion.php';
 $result = $mysqli->query($sql);
+$mysqli->close();
 
 $subject = "[CZ NOUVEL ELEVE - COURS] " . $nom . " " . $prenom ;
 
@@ -83,12 +85,12 @@ $message_eleve = '
      $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
      // En-têtes additionnels
-     $headers_CZ .= $headers .'To: Eleve <' . $email. '> \r\n';
+     $headers_CZ = $headers .'To: Eleve <' . $email. '> \r\n';
      $headers_CZ .= 'From:' . $prenom . ' ' . $nom .' <'.$email.'>'.'\n'; // Expediteur
      $headers_CZ .= 'Delivered-to: '.$to."\n"; // Destinataire
      
      // En-têtes additionnels
-     $headers_eleve .= $headers .'To: Coach Zbra <' . $to. '> \r\n';
+     $headers_eleve = $headers .'To: Coach Zbra <' . $to. '> \r\n';
      $headers_eleve .= 'From: Coach Zbra <'.$to.'>'.'\n'; // Expediteur
      $headers_eleve .= 'Delivered-to: '.$email."\n"; // Destinataire
 

@@ -20,6 +20,11 @@
                  <h3>Test Coach Zbra</h3>
                  <p class="lead">Test Coach Zbra</p>
                  <p>Test Coach Zbra</p>
+                 <p><a role="button" href="#planningCZ" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-globe"></span> Zone géographique</a></p>
+                 <p><a role="button" href="#planningCZ" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-usd"></span> Tarif</a></p>
+                 <p><a role="button" href="#planningCZ" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-calendar"></span> Disponibilités</a></p>
+                 
+                 
             </div>
 
 
@@ -100,7 +105,7 @@
                 Merci de t'être inscrit(e) ! <i class="glyphicon glyphicon-thumbs-up"></i> Je te recontacterai dans le plus brefs delais.
             </div>
 
-           <div class="table-responsive">
+           <div class="table-responsive" id="planningCZ">
                 <table class="table table-bordered calendar">
                 <thead class="head-calendar">
                     <tr>
@@ -249,7 +254,7 @@
                                             <select class="form-control" name="lieu">
                                                 <option value="">Sélectionner un lieu</option>
                                                 <option value="Chez Coach Zbra">Chez le Coach</option>
-                                                <option value="Chez moi">Chez moi</option>
+                                                <option value="Chez l'éleve">Chez moi</option>
                                                 <option value="Via Skype">Via Skype</option>
                                             </select>
                                         </div>
@@ -410,6 +415,7 @@ $(document).ready(function() {
             console.log(result);
         }, 'json');
         $('#btannuler').click();
+        gotourl("#success_message" );
     });
 });
 </script>

@@ -14,8 +14,8 @@ $typeOfperson =   $_POST['typeOfperson'];
 $adresse =" ";
 $cp  = " ";
 $ville = " ";
-$lieu= $_POST['typeOfperson'];
-$prospect = 0;
+$lieu= " ";
+$prospect = 1;
 /*$first_name ="";
 $last_name ="";
  $email   = "" ;   
@@ -23,11 +23,11 @@ $last_name ="";
 $comment = "";
 $typeOfperson = "";*/
 
-$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,now()) ON DUPLICATE KEY UPDATE email ='$email';";
+$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,'$typeOfperson',now()) ON DUPLICATE KEY UPDATE email ='$email';";
 
 include 'connexion.php';
 $result = $mysqli->query($sql);
-
+$mysqli->close();
 
 $to = "coachzbraguitar@gmail.com";
 $subject = "[CZ Contact] " . $prenom . " " . $nom ;
