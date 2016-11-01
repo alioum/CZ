@@ -23,7 +23,7 @@
                     
                     <!-- Success message -->
                     <div class="alert alert-success" role="alert" id="success_message">
-                        Merci de m'avoir contacter ! <i class="glyphicon glyphicon-thumbs-up"></i> Je vous recontacterai dans le plus bref delais.
+                        Merci de m'avoir contacter ! <i class="glyphicon glyphicon-thumbs-up"></i> Je vous recontacterai dans les plus brefs delais.
                     </div>
 
                     <!-- Text input-->

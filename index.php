@@ -79,7 +79,7 @@
                     <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/hard work.PNG">
                     <h2 class="avantage">Zbra School</h2>
                     <p>“Tu as toujours secrètement rêvé d’être un guitar hero ? 
-                        La Zbra School est faite pour toi ! Rejoins moi et découvres quel musicien sommeil en toi !”</p>
+                        La Zbra School est faite pour toi ! Rejoins moi et découvre quel musicien sommeille en toi !”</p>
                     </br>
                     <p><a role="button" href="zbraschool.php" class="btn btn-default"> <span class="glyphicon glyphicon-education"></span> En savoir plus</a></p>
                 </div><!-- /.col-lg-4 -->
@@ -109,7 +109,7 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading"><span class="text-muted">Qui est le </span> Coach Zbra <span class="text-muted">? </span></h2>
-                    <p>Je m’appelle Geoffrey, je suis guitariste depuis plus de 15 ans . Pour vivre de ma passion j’ai suivi un cycle de formation de musicien professionnel à l’école des Musique actuelles ATLA , et en suis sorti diplômé.
+                    <p>Je m’appelle Geoffrey, guitariste depuis plus de 15 ans . Pour vivre de ma passion j’ai suivi un cycle de formation de musicien professionnel à l’école des Musique actuelles ATLA , et en suis sorti diplômé.
                      <p>J’enseigne la guitare depuis plus de 7 ans en partenariat avec plusieurs écoles et à mon compte.</p>
 
 

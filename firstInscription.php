@@ -1,6 +1,6 @@
 <?php
 
-/*
+
 $to = "coachzbraguitar@gmail.com";
 $email = $_POST['email'];
 $lieu = $_POST['lieu'];
@@ -12,13 +12,15 @@ $cp = $_POST['cp'];
 $ville = $_POST['ville'];
 $tel = $_POST['tel'];
 $comment = $_POST['comment'];
-$prospect = 1;
-$qui = "";
+$prospect = 0;
+$qui = "Eleve";
+$date_cours = $_POST['dateHeure_cours'];
 
-*/
-    $to = "coachzbraguitar@gmail.com";
 
-    $email = "coachzbra@yopmail.com";
+/*
+$to = "coachzbraguitar@gmail.com";
+
+    $email = "ca@yopmail.com";
     $nom = "a";
     $prenom = "a";
     $adresse = "a";
@@ -26,12 +28,17 @@ $qui = "";
     $ville = "a";
     $tel = "a";
     $lieu = "a";
-    $comment =  "a";
+    $comment =  "aaaa";
     $prospect = 0;
     $qui = "Eleve";
+    $date_cours = "Mardi 12h";
+*/
 
+//$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,'$qui',now()) ON DUPLICATE KEY UPDATE email ='$email';";
+    
+$sql = "INSERT INTO eleve (email,nom,prenom,adresse,cp,ville,tel,lieu,prospect,qui,message,date_creation) VALUES ('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,'$qui','$comment',now())
+ON DUPLICATE KEY UPDATE email='$email',nom='$nom',prenom='$prenom',adresse='$adresse',cp='$cp',ville='$ville',tel='$tel',lieu='$lieu',prospect=$prospect,qui='$qui',message='$comment',date_creation=now();";
 
-$sql = "INSERT INTO eleve VALUES('$email','$nom','$prenom','$adresse','$cp','$ville','$tel','$lieu',$prospect,'$qui',now()) ON DUPLICATE KEY UPDATE email ='$email';";
 include 'connexion.php';
 $result = $mysqli->query($sql);
 $mysqli->close();
@@ -39,15 +46,16 @@ $mysqli->close();
 $subject = "[CZ NOUVEL ELEVE - COURS] " . $nom . " " . $prenom ;
 
 
-$message_html = "<p> Nom: " . $nom . "</p>" 
+$message_html = "<p> Date heure du cours: " . $date_cours . "</p>"
+        ."<p> Nom: " . $nom . "</p>" 
         ."<p> Prénom: " . $prenom . "</p>"
         ."<p> Adresse: " . $adresse . "</p>"
         ."<p> CP: " . $cp . "</p>"
         ."<p> Ville: " . $ville . "</p>"
-        . "<p> Mail: " . $email . "</p>" 
-        . "<p> Tel.: " . $tel . "</p>"
-        . "<p> Lieu: " . $lieu . "</p>"
-        .  "<p> Message: </p><p>" . $comment . "</p>";
+        ."<p> Mail: " . $email . "</p>" 
+        ."<p> Tel.: " . $tel . "</p>"
+        ."<p> Lieu: " . $lieu . "</p>"
+        ."<p> Message: </p><p>" . $comment . "</p>";
 
 
 //=====Création du message.
@@ -72,7 +80,7 @@ $message_eleve = '
         <title>Inscription au cours du Coach Zbra</title>
       </head>
       <body>
-      <h1>Merci pour ton inscription ! Je reveiens vers toi dans les plus brefs délais.</h1>
+      <h1>Merci pour ton inscription ! Je reviens vers toi dans les plus brefs délais.</h1>
       </br>
       <h4>Récapitulatif des informations envoyées au Coach:</h4>
       '. $message_html.

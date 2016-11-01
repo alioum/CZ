@@ -40,7 +40,7 @@
                     <div class="col-lg-4">
                       <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/glasses.PNG">
                       <h2 class="avantage">Organisation</h2>
-                      <p>Progresser efficacement en un lapse de temps réduit</p>
+                      <p>Progresser efficacement en un laps de temps réduit</p>
                       <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
@@ -74,7 +74,7 @@
                 <div class="col-lg-4">
                   <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/glasses.PNG">
                   <h2 class="avantage">Organisation</h2>
-                  <p>Progresser efficacement en un lapse de temps réduit</p>
+                  <p>Progresser efficacement en un laps de temps réduit</p>
                   <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
@@ -174,7 +174,7 @@
                         <h4><i class="glyphicon glyphicon-time"></i><span id="date-heure-inscription"></span></h4>
                         <div class="tab-pane active" id="tab1">
                             <form id="firstInscrpiton" method="post" class="form-horizontal" action="firstInscription.php">
-                                <input type="hidden" id="date-heure-inscription-input" name="creneau" value="firstInscrpiton"/>
+                                <input type="hidden" id="dateHeure_cours" name="dateHeure_cours" value="firstInscrpiton"/>
                                 <div class="form-group">
                                     <label class="col-lg-3 control-label">Nom* :</label>
                                     <div class="col-lg-6 inputGroupContainer">
@@ -301,7 +301,7 @@ function reply_click(clicked_id)
     //Affichage dans modale
     document.getElementById("date-heure-inscription").innerHTML = clicked_id;
     //Passer dans un input hidden pour le mail
-    document.getElementById("date-heure-inscription-input").value = clicked_id;
+    document.getElementById("dateHeure_cours").value = clicked_id;
 }
 $(document).ready(function() {
  $('#firstInscrpiton')
