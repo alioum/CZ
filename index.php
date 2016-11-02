@@ -76,7 +76,7 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/hard work.PNG">
+                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/zbraschoolpicto.png">
                     <h2 class="avantage">Zbra School</h2>
                     <p>“Tu as toujours secrètement rêvé d’être un guitar hero ? 
                         La Zbra School est faite pour toi ! Rejoins moi et découvre quel musicien sommeille en toi !”</p>
@@ -84,14 +84,14 @@
                     <p><a role="button" href="zbraschool.php" class="btn btn-default"> <span class="glyphicon glyphicon-education"></span> En savoir plus</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/glasses.PNG">
+                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/zbraentreprisepicto.png">
                     <h2 class="avantage">Zbra Entreprise</h2>
                     <p>“Vous avez toujours voulu pratiquer la guitare sans réussir à trouver le bon moment ? 
                         Mettez à profit votre temps libre et épanouissez vous sur votre lieu de travail.”</p>
                     <p><a role="button" href="zbraEnterprise.php" class="btn btn-default"> <span class="glyphicon glyphicon-briefcase"></span> En savoir plus</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/chimical zbra.PNG">
+                    <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/czpicto.png">
                     <h2 class="avantage">Coach Zbra</h2>
                     <p>“Envie de voir le Coach en action ?      
                     Viens découvrir mon univers en vidéos !”</p>

@@ -111,6 +111,7 @@
                 </fieldset>
             </form>
         </div>
+        <hr class="featurette-divider">
         <?php include("footer.html"); ?>
     </body>
 </html>

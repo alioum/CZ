@@ -18,75 +18,32 @@
           <!-- START THE FEATURETTES -->
         <div class="container">
           <img src="images/concert_crowd-wallpaper-1600x1200.jpg" style="width: 100%;"/>
-            <hr>
+            <h2>Pourquoi choisir les Cours en Entreprise ?</h2>
+            <p>Des cours en Entreprise pour apprendre la guitare et renforcer la Cohésion. Les activités artistiques ou créatives peuvent mettre de nombreuses valeurs en exergue, la bonne solution pour favoriser l’esprit d’équipe.</p>
+            <h3>Pour l’Entreprise :</strong></h3>
+            <ul>
+                <li>Développer  <strong>bon état d’esprit</strong> au sein de vos équipe</li>
+                <li>Favoriser <strong>la gestion du stress, la cohésion</strong></li>
+                <li>Construire un environnement favorable à l’<strong>épanouissement de vos salariés.</strong></li>
+            </ul>
+            <h3>Pour les Élèves :</h3>
+            <ul>
+                <li>Progresser tout en se faisant <strong>plaisir</strong></li>
+                <li>Améliorer son <strong>insertion</strong> au sein d’une équipe</li>
+                <li>Se rallier autour d’un <strong>objectif commun (Atelier Musical, Concert)</strong></li>
+            </ul>
+            <p>A travers les Cours en entreprise, j’ai constaté que les employés étaient ravis de <strong>mettre à profit leur temps libre</strong> dans une activité musicale. En Groupe ou en Individuel  
+            L'objectif est d'allier travail, détente dans un cadre ludique <strong>propice à l’échange et au partage.</strong></p>
+            <p>Valoriser chaque élèves et créer une <strong>dynamique de réussite</strong> au sein d’un groupe est essentiel, c’est pourquoi la création d’<strong>ateliers musicaux</strong>, d’un <strong>concert</strong> de fin d’année permettent le développement de l’<strong>énergie collective</strong> et le rapprochement des membres d’une même équipe.</p>
+            <h3>Descriptif des cours</h3>
+            <p>Les cours sont tous styles, du débutant au guitariste confirmé, la pédagogie s’adaptant aux objectifs de chacun. Afin d'assurer une progression efficace les groupes sont répartis par niveaux et comporte  idéalement de  1 à 6 personnes.  Les leçons  sont dispensées dans les locaux de l’ entreprise , généralement entre 12h/14h ou le soir 17h/20h suivant la disponibilités des élèves.</p>
 
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-              <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive center-block" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1NjYwMmZjODEwIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU2NjAyZmM4MTAiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEzMzMzMTI5ODgyODEyIiB5PSIyNjEuNyI+NTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive center-block" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1NjYwMmZiMmNlIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU2NjAyZmIyY2UiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEzMzMzMTI5ODgyODEyIiB5PSIyNjEuNyI+NTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-              <img alt="500x500" data-src="holder.js/500x500/auto" class="featurette-image img-responsive center-block" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1NjYwMmZkYTQzIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTU2NjAyZmRhNDMiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEzMzMzMTI5ODgyODEyIiB5PSIyNjEuNyI+NTAweDUwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <!-- /END THE FEATURETTES -->
-          
-                  <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-              <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/hard work.PNG">
-              <h2 class="avantage">Hard work</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/glasses.PNG">
-              <h2 class="avantage">Nice glasses</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/chimical zbra.PNG">
-              <h2 class="avantage">Zbra !</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a role="button" href="#" class="btn btn-default">View details »</a></p>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-        </div>
-
+            <p>Pour toute question  
+                <a role="button" href="contact.php" class="btn btn-lg btn-primary">
+                    <span class="glyphicon glyphicon-envelope"></span> Contactez-moi</a>
+                 je reste à votre écoute et à votre disposition.
+            </p>
+            <hr class="featurette-divider">
 
     </div><!-- /.container -->
     <div class="container">
