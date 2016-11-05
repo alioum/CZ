@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Coach Zbra</title>
-        <meta content="" name="description">
+        <title>Coach Zbra | Accueil</title>
+        <meta content="Découvres l'univers du Coach Zbra guitariste d'exception, qui nous offfre des concepts innovants en vidéos, en musique et en Zbra ! Le Coach Zbra donne aussi des cours de guitare aux particuliers et aux entreprises, via la Zbra School et la Zbra Entreprise." name="description">
         <meta content="Coach Zbra" name="author">
         <?php include 'head.html'; ?>
     </head>
@@ -77,24 +77,24 @@
             <div class="row">
                 <div class="col-lg-4">
                     <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/zbraschoolpicto.png">
-                    <h2 class="avantage">Zbra School</h2>
-                    <p>“Tu as toujours secrètement rêvé d’être un guitar hero ? 
-                        La Zbra School est faite pour toi ! Rejoins moi et découvre quel musicien sommeille en toi !”</p>
+                    <h2 class="avantage"  align="center">Zbra School</h2>
+                    <p>Tu as toujours secrètement rêvé d’être un guitar hero ? 
+                        La Zbra School est faite pour toi ! Rejoins moi et découvre quel musicien sommeille en toi !</p>
                     </br>
                     <p><a role="button" href="zbraschool.php" class="btn btn-default"> <span class="glyphicon glyphicon-education"></span> En savoir plus</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/zbraentreprisepicto.png">
-                    <h2 class="avantage">Zbra Entreprise</h2>
-                    <p>“Vous avez toujours voulu pratiquer la guitare sans réussir à trouver le bon moment ? 
-                        Mettez à profit votre temps libre et épanouissez vous sur votre lieu de travail.”</p>
+                    <h2 class="avantage"  align="center">Zbra Entreprise</h2>
+                    <p>Vous avez toujours voulu pratiquer la guitare sans réussir à trouver le bon moment ? 
+                        Mettez à profit votre temps libre et épanouissez vous sur votre lieu de travail.</p>
                     <p><a role="button" href="zbraEnterprise.php" class="btn btn-default"> <span class="glyphicon glyphicon-briefcase"></span> En savoir plus</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="avantage" width="140" height="140" alt="Generic placeholder image" src="images/czpicto.png">
-                    <h2 class="avantage">Coach Zbra</h2>
-                    <p>“Envie de voir le Coach en action ?      
-                    Viens découvrir mon univers en vidéos !”</p>
+                    <h2 class="avantage"  align="center">Coach Zbra</h2>
+                    <p>Envie de voir le Coach en action ?      
+                    Viens découvrir mon univers en vidéos !</p>
                     </br>
                     </br>
                     <p><a role="button" href="videos.php" class="btn btn-default"> <span class="glyphicon glyphicon-film"></span> En savoir plus</a></p>

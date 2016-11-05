@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Contact | Coach Zbra</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <title>Coach Zbra |Contact</title>
+        <meta content="Ne sois pas timide et contact le Coach Zbra ! Il se fera un plaisir de te répondre !" name="description">
+        <meta content="Coach Zbra" name="author">
         <?php include 'head.html'; ?>
         <script type="text/javascript" src="bootstrapvalidator-0.5.3/dist/js/bootstrapValidator.min.js"></script>
         <link href="bootstrapvalidator-0.5.3/dist/css/bootstrapValidator.min.css" rel="stylesheet">

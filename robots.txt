@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow: /index.php
+Allow: /zbraSchool.php
+Allow: /zbraEnterprise.php
+Allow: /videos.php
+Allow: /news.php
+Allow: /contact.php

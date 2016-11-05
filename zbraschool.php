@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title>Coach Zbra</title>
-    <meta content="" name="description">
+    <title>Zbra School | Cours de guitare</title>
+    <meta content="Le Coach Zbra donne des cours de guitare via la Zbra School. La Zbra School est un programme personnalisé selon ton niveau et tes envies qui permet de maîtriser pleinement l’instrument afin d’exprimer ta créativité, dans une ambiance agréable" name="description">
     <meta content="Coach Zbra" name="author">
     <?php include './head.html'; ?>
     <script type="text/javascript" src="bootstrapvalidator-0.5.3/dist/js/bootstrapValidator.min.js"></script>
@@ -16,7 +16,7 @@
             <img src="images/Gibsn-Guitar-HD-Wallpapers.jpg" style="width: 100%;"/>
             <hr
             <div class="container">
-                 <h1>La Pédagogie de la Zbra School</h1>
+                 <h1>La pédagogie de la Zbra School</h1>
                  <p>Tout d’abord laisse moi t’expliquer comment fonctionne les cours de guitare avec la Zbra School:</p>
                 <ul>
                   <li>Un <strong>programme personnalisé</strong> selon ton niveau et tes envies</li>
@@ -26,7 +26,7 @@
                  
                 <p>L’objectif est simple, faire de toi le guitariste que tu as toujours rêvé d’être.</p>
                 <p>La pédagogie des cours est qu’en <strong>un minimum de temps et d’efforts</strong> tu sois capable d’être dans une satisfaction et une progression constante afin que la pratique devienne un réel plaisir.</p>
-                <p>C’est pourquoi au cours de mes années d’enseignement j’ai isolé trois points essentiels pour atteindre ce but, Patience, Organisation, Concentration (P.O.C) :</p>
+                <p>C’est pourquoi au cours de mes années d’enseignement j’ai isolé trois points essentiels pour atteindre ce but : Patience, Organisation, Concentration (P.O.C) :</p>
                 <dl class="dl-horizontal">
                     <dt>Patience</dt>
                     <dd>Apprendre à son propre rythme, Réduire les difficultés sans forcer</dd>
@@ -46,6 +46,7 @@
                 
                 </br>
                 </br>
+                
                  <p><a role="button" href="#deplacement" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-globe"></span> Zone géographique</a>
                  <a role="button" href="#tarif" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-usd"></span> Tarif</a>
                  <a role="button" href="#disponibilite" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-calendar"></span> Disponibilités</a></p>
@@ -55,10 +56,10 @@
                 <div class="row featurette">
                          <div class="col-md-7">
                            <h2 id="deplacement" class="featurette-heading"><span class="glyphicon glyphicon-globe"></span> Zone de déplacement</h2>
-                           <p><strong>En Déplacement</strong></p>
-                           <p>Je me déplace sur Montrouge, Chatillon, Bagneux, Malakoff, Paris 13ème,14ème et 15ème. En cas de doute ou pour toute question n'hésitez pas à me contacter.</p>
+                           <p><strong>En déplacement</strong></p>
+                           <p>Je me déplace sur Montrouge, Chatillon, Bagneux, Malakoff, Paris 13ème,14ème et 15ème. En cas de doute ou pour toute question n'hésites pas à me contacter.</p>
 
-                            <p><strong>A Domicile</strong></p>
+                            <p><strong>A domicile</strong></p>
                             <p>Adresse du Coach: 12 rue Jules Guesde, 92120, Montrouge</p>
                             <p><img class="featurette-image img-responsive center-block" src="./images/metro.png"></p>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-        <title>Coach Zbra - Vidéos</title>
-        <meta content="" name="description">
+        <title>Coach Zbra | Vidéos</title>
+        <meta content="Le Coach Zbra, guitariste d'exception, nous offfre des concepts innovants en vidéos, en musique et en Zbra !" name="description">
         <meta content="Coach Zbra" name="author">
         <?php include './head.html'; ?>
         <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
@@ -40,8 +40,10 @@
                     });
                 </script>
             </div>
+            <hr class="featurette-divider">
         </div>
         <div class="container">
+            
             <!-- FOOTER -->
             <?php include 'footer.html'; ?>
         </div>

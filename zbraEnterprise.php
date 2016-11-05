@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title>Coach Zbra</title>
-    <meta content="" name="description">
+    <title>Zbra Entreprise | Cours de guitare</title>
+    <meta content="Le Coach Zbra donne des cours de guitare aux entreprises via la Zbra Entreprise. Les cours en Entreprise permettent d'apprendre la guitare et renforcer la Cohésion. Les activités artistiques ou créatives peuvent mettre de nombreuses valeurs en exergue, la bonne solution pour favoriser l’esprit d’équipe, dans une ambiance agréable" name="description">
     <meta content="Coach Zbra" name="author">
     <?php include './head.html'; ?>
   </head>
